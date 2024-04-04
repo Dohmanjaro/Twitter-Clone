@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Clone - Your Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">New Tweet</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home-feed">
+      <h2>Home Feed</h2>
+      <ul class="tweets">
+        </ul>
+    </section>
+
+    <section id="profile">
+      <h2>Your Profile</h2>
+      <div class="profile-info">
+        <img src="profile-picture.png" alt="Profile Picture">
+        <p>Username</p>
+        <p>Bio (optional)</p>
+      </div>
+      <div class="profile-tweets">
+        <h2>Your Tweets</h2>
+        <ul class="tweets">
+          </ul>
+      </div>
+    </section>
+
+    <section id="new-tweet">
+      <h2>New Tweet</h2>
+      <form id="tweet-form">
+        <textarea id="tweet-content" maxlength="280" placeholder="What's happening?"></textarea>
+        <button type="submit">Tweet</button>
+        <span id="char-count">280</span>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+  </body>
+</html>
